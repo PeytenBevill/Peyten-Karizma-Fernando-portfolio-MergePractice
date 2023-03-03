@@ -1,33 +1,18 @@
-.contact {
+
+li.about{
   transition: transform 0.5s ease;
   transform: scale(1, 1);
-  color: black;
-}
-.contact:hover {
-  transform: scale(1.05);
-}
-li:active { 
-  animation: fontChange 1s ease;
-  padding: 0px;
-}
-@keyframes fontChange {
-  70% {
-    font-size: 30px;
-  }
 }
 
-.about {
-  transition: transform 0.5s ease;
-  transform: scale(1, 1);
-}
-.about:hover {
+
+li.about:hover a{
   transform: scale(1.05);
+  font-size: 25px;
+  animation: changeColor 1s infinite;
 }
 
-.portfolio {
-  transition: transform 0.5s ease;
-  transform: scale(1, 1);
-}
-.portfolio:hover {
-  transform: scale(1.05);
+@-webkit-keyframes changeColor
+{
+  from { background: aqua; }
+  to { background: fuchsia; }
 }
