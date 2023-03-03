@@ -1,18 +1,20 @@
 
-li.about{
-  transition: transform 0.5s ease;
-  transform: scale(1, 1);
+.about a{
+    animation: changeBackground 1s ease-in-out infinite;
 }
 
+.about:hover {}
 
-li.about:hover a{
-  transform: scale(1.05);
-  font-size: 25px;
-  animation: changeColor 1s infinite;
+.portfolio {}
+
+.portfolio:hover {}
+
+    a:active { 
+        animation: changeBackground 1s infinite;
+    }
+  
+  @-webkit-keyframes changeBackground {
+    from { background: aqua; }
+    to { background: fuchsia; }
 }
 
-@-webkit-keyframes changeColor
-{
-  from { background: aqua; }
-  to { background: fuchsia; }
-}
