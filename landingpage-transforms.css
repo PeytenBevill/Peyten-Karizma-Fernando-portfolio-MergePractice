@@ -1,0 +1,18 @@
+.about a{
+    animation: changeBackground 1s ease-in-out infinite;
+}
+
+.about:hover {}
+
+.portfolio {}
+
+.portfolio:hover {}
+
+    a:active { 
+        animation: changeBackground 1s infinite;
+    }
+  
+  @-webkit-keyframes changeBackground {
+    from { background: aqua; }
+    to { background: fuchsia; }
+}
