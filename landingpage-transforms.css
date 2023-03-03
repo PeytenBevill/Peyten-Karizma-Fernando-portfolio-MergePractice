@@ -1,0 +1,17 @@
+li.about{
+  transition: transform 0.5s ease;
+  transform: scale(1, 1);
+}
+
+
+li.about:hover a{
+  transform: scale(1.05);
+  font-size: 25px;
+  animation: changeColor 1s infinite;
+}
+
+@-webkit-keyframes changeColor
+{
+  from { background: aqua; }
+  to { background: fuchsia; }
+}
